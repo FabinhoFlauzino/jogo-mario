@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes mario-animation {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes pulo {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes nuvens {
+  0% {
+    right: -30%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@media (max-width: 500px) {
+  @keyframes mario-animation {
+    0% {
+      right: -20%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes pulo {
+    0% {
+      bottom: 0;
+    }
+    40% {
+      bottom: 120px;
+    }
+    50% {
+      bottom: 120px;
+    }
+    60% {
+      bottom: 120px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+  @keyframes nuvens {
+    0% {
+      right: -90%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+}
+.game-board {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 30px solid #23a023;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #ebf6ff);
+}
+.game-board .pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  animation: mario-animation 1.4s infinite linear;
+}
+.game-board .bife {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  left: 190px;
+}
+.game-board .mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+.game-board .clouds {
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  animation: nuvens 20s infinite linear;
+}
+.game-board .jump {
+  animation: pulo 500ms ease-out;
+}
+
+@media (max-width: 500px) {
+  .game-board {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 30px solid #23a023;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #ebf6ff);
+  }
+  .game-board .pipe {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    animation: mario-animation 1.4s infinite linear;
+  }
+  .game-board .mario {
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+  }
+  .game-board .clouds {
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    animation: nuvens 20s infinite linear;
+  }
+  .game-board .jump {
+    animation: pulo 500ms ease-out;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

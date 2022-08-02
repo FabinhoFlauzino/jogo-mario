@@ -1,0 +1,75 @@
+.game-board {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 30px solid #23a023;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #ebf6ff);
+
+    .pipe {
+        position: absolute;
+        bottom: 0;
+        width: 80px;
+        animation: mario-animation 1.4s infinite linear;
+    }
+
+    .bife{
+        position: absolute;
+        bottom: 0;
+        width: 100px;
+        left: 190px;
+    }
+
+    .mario {
+        width: 150px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .clouds {
+        width: 500px;
+        position: absolute;
+        top: 10%;
+        animation: nuvens 20s infinite linear;
+    }
+
+    .jump {
+        animation: pulo 500ms ease-out;
+    }
+}
+@media(max-width: 500px){
+    .game-board {
+        width: 100%;
+        height: 100vh;
+        border-bottom: 30px solid #23a023;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(#87ceeb, #ebf6ff);
+    
+        .pipe {
+            position: absolute;
+            bottom: 0;
+            width: 40px;
+            animation: mario-animation 1.4s infinite linear;
+        }
+    
+        .mario {
+            width: 75px;
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .clouds {
+            width: 300px;
+            position: absolute;
+            top: 10%;
+            animation: nuvens 20s infinite linear;
+        }
+    
+        .jump {
+            animation: pulo 500ms ease-out;
+        }
+    }
+}

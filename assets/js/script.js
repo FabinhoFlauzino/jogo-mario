@@ -11,7 +11,7 @@ const jump = () => {
 
 document.addEventListener("keydown", jump);
 
-document.addEventListener('touchstart', jump)
+document.querySelector('.btn-pular').addEventListener('click', jump)
 
 const start = document.querySelector(".start");
 

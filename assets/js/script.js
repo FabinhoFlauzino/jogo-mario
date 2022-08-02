@@ -11,6 +11,8 @@ const jump = () => {
 
 document.addEventListener("keydown", jump);
 
+document.addEventListener('touchstart', jump)
+
 const start = document.querySelector(".start");
 
 if (window.matchMedia("(max-width: 500px)").matches) {
